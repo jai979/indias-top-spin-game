@@ -3,52 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India's Top Spin Game</title>
+    <title>Spin Game Download</title>
     <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            text-align: center;
-            margin-top: 50px;
+        body { background-color: #e8e5d3; font-family: Arial; margin: 0; padding: 0; }
+        .header { background-color: #cc3333; padding: 15px; text-align: center; color: white; }
+        .header h1 { margin: 0; font-size: 24px; color: #222; }
+        .header p { margin: 5px 0 0; font-size: 14px; color: #333; }
+        
+        .container { padding: 20px; text-align: center; max-width: 800px; margin: auto; }
+        .main-title { color: #8b0000; font-size: 24px; margin-bottom: 20px; }
+        .sub-title { font-size: 20px; font-weight: bold; margin-bottom: 20px; }
+        
+        /* Games Grid setup - 2 games side by side */
+        .games-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            border-top: 2px solid #000;
+            padding-top: 20px;
         }
-        h1 {
-            color: #ff9933; /* Saffron color */
-        }
-        .game-container {
-            margin-top: 30px;
-            padding: 20px;
-            border: 2px dashed #138808; /* Green color */
-            display: inline-block;
-            border-radius: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+
+        .game-card { display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; }
+        .game-image { width: 120px; height: 120px; object-fit: cover; border-radius: 10px; margin-bottom: 10px; }
+        .game-name { font-size: 18px; font-weight: bold; margin-bottom: 5px; }
+        .stars { color: #f5b041; font-size: 18px; margin-bottom: 10px; }
+        
+        .download-btn {
+            display: block; width: 100%; background-color: #dcdcdc; color: blue;
+            text-decoration: underline; font-size: 18px; font-weight: bold;
+            padding: 10px; border-radius: 8px; border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to India's Top Spin Game!</h1>
-    
-    <div class="game-container">
-        <p>Yahan aapka game aayega.</p>
-        <button id="spinBtn">SPIN</button>
+    <!-- Top Red Header -->
+    <div class="header">
+        <h1>Spin Game</h1>
+        <p>Game Download</p>
     </div>
 
-    <script>
-        // Simple JavaScript for the button
-        document.getElementById('spinBtn').addEventListener('click', function() {
-            alert('Spin button dabaya gaya! Ab yahan game logic aayega.');
-        });
-    </script>
+    <!-- Main Content -->
+    <div class="container">
+        
+        <h2 class="main-title">Download Game – Play & Win Exciting Rewards Now</h2>
+        <h3 class="sub-title">Mobile Spin Game</h3>
+
+        <div class="games-grid">
+
+            <!-- ================= GAME 1 START ================= -->
+            <div class="game-card">
+                <!-- Yahan Game ka Logo lagayein (Image ka link daalein) -->
+                <img src="https://via.placeholder.com/120?text=LOGO" alt="Game 1" class="game-image">
+                
+                <!-- Yahan Game ka Naam likhein -->
+                <div class="game-name">UU7 Game</div>
+                
+                <div class="stars">★★★★☆</div>
+                
+                <!-- Yahan apna REFERRAL LINK daalein -->
+                <a href="https://YAHAN-APNA-LINK-DAALEIN.com" target="_blank" class="download-btn">Download</a>
+            </div>
+            <!-- ================= GAME 1 END ================= -->
+
+
+            <!-- ================= GAME 2 START ================= -->
+            <div class="game-card">
+                <img src="https://via.placeholder.com/120?text=LOGO" alt="Game 2" class="game-image">
+                <div class="game-name">P77 Game</div>
+                <div class="stars">★★★★☆</div>
+                <a href="https://YAHAN-APNA-LINK-DAALEIN.com" target="_blank" class="download-btn">Download</a>
+            </div>
+            <!-- ================= GAME 2 END ================= -->
+
+        </div>
+    </div>
 
 </body>
 </html>
